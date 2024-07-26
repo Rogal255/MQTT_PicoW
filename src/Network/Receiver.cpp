@@ -4,6 +4,12 @@
 #include <algorithm>
 #include <iostream>
 
+Receiver::~Receiver() {
+    for (const auto& topic : subscribed_topics) {
+        this->unsubscribe(topic);
+    }
+}
+
 ErrorCode Receiver::set_notifier(INotifier* notifier) {
     if (notifier_) {
         return ErrorCode::NOTIFIER_NOT_SET;
