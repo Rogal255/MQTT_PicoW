@@ -1,10 +1,10 @@
-#include "ErrorCode.hpp"
+#include "build/_deps/json-src/include/nlohmann/json.hpp"
 #include "hardware/i2c.h"
-#include "Network.hpp"
 #include "pico/stdlib.h"
-#include "Receiver.hpp"
+#include "src/Network/ErrorCode.hpp"
+#include "src/Network/Network.hpp"
+#include "src/Network/Receiver.hpp"
 #include <iostream>
-#include <nlohmann/json.hpp>
 
 enum PIN {
     SDA = 6,

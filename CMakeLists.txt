@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(PICO_BOARD pico_w CACHE STRING "Board type")
 
 # Pull in Raspberry Pi Pico SDK (must be before project)
-include(pico_sdk_import.cmake)
+include(cmake/pico_sdk_import.cmake)
 
 if (PICO_SDK_VERSION_STRING VERSION_LESS "1.4.0")
     message(FATAL_ERROR "Raspberry Pi Pico SDK version 1.4.0 (or later) required. Your version is ${PICO_SDK_VERSION_STRING}")
@@ -17,7 +17,7 @@ project(Exercises C CXX ASM)
 # Initialise the Raspberry Pi Pico SDK
 pico_sdk_init()
 
-add_executable(${PROJECT_NAME} main.cpp Network.cpp Receiver.cpp)
+add_executable(${PROJECT_NAME} src/main.cpp src/Network/Network.cpp src/Network/Receiver.cpp)
 
 pico_set_program_name(${PROJECT_NAME} "Exercises")
 pico_set_program_version(${PROJECT_NAME} "0.1")

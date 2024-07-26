@@ -1,6 +1,6 @@
 #pragma once
-#include <nlohmann/json.hpp>
-#include "ErrorCode.hpp"
+#include "build/_deps/json-src/include/nlohmann/json.hpp"
+#include "src/Network/ErrorCode.hpp"
 
 class IListener {
 public:

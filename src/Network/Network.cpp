@@ -1,6 +1,6 @@
 #include "Network.hpp"
-#include "ErrorCode.hpp"
 #include "NetworkConfig.hpp"
+#include "src/Network/ErrorCode.hpp"
 #include <algorithm>
 #include <iostream>
 #include <memory>

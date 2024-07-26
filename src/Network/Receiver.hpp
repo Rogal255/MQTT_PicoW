@@ -1,7 +1,7 @@
 #pragma once
-#include "ErrorCode.hpp"
-#include "IListener.hpp"
-#include "INotifier.hpp"
+#include "src/IListener.hpp"
+#include "src/INotifier.hpp"
+#include "src/Network/ErrorCode.hpp"
 #include <string>
 #include <vector>
 

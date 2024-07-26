@@ -1,15 +1,15 @@
 #pragma once
 
-#include "ErrorCode.hpp"
-#include "INotifier.hpp"
+#include "build/_deps/json-src/include/nlohmann/json.hpp"
 #include "lwip/altcp_tls.h"
 #include "lwip/apps/mqtt.h"
 #include "lwip/apps/mqtt_priv.h"
 #include "lwip/dns.h"
 #include "lwip/pbuf.h"
 #include "pico/cyw43_arch.h"
+#include "src/INotifier.hpp"
+#include "src/Network/ErrorCode.hpp"
 #include <memory>
-#include <nlohmann/json.hpp>
 #include <string>
 #include <utility>
 #include <vector>

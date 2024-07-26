@@ -1,8 +1,8 @@
 #pragma once
-#include "IListener.hpp"
+#include "build/_deps/json-src/include/nlohmann/json.hpp"
+#include "src/IListener.hpp"
+#include "src/Network/ErrorCode.hpp"
 #include <string>
-#include <nlohmann/json.hpp>
-#include "ErrorCode.hpp"
 
 class INotifier {
 public:

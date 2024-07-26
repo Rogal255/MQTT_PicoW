@@ -1,8 +1,8 @@
 #include "Receiver.hpp"
-#include "ErrorCode.hpp"
+#include "build/_deps/json-src/include/nlohmann/json.hpp"
+#include "src/Network/ErrorCode.hpp"
 #include <algorithm>
 #include <iostream>
-#include <nlohmann/json.hpp>
 
 ErrorCode Receiver::set_notifier(INotifier* notifier) {
     if (notifier_) {
